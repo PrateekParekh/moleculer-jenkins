@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('local') {
       steps {
         git(branch: 'master', url: 'https://github.com/PrateekParekh/moleculer-jenkins', changelog: true, poll: true)
       }
